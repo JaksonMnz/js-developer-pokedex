@@ -1,24 +1,101 @@
-* {
+*{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-
 body {
-    background-color: #f6f8fc;
+    background-color: rgb(212, 213, 214);
 }
 
-.content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
+.pokemons  {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: -2.7rem;
+    margin-top: -.5rem;
 }
 
-@media screen and (min-width: 992px) {
+
+.pokemon .top  {
+    height: 19.813rem;
+}
+
+.pokemon .bottom .stats .stat {
+    height: 1.513rem;
+}
+
+
+/* Pixel 5 */
+@media screen and (max-width: 393px) and (max-height: 851px) {
     .content {
-        max-width: 992px;
-        height: auto;
+        
+        max-width: 393px;
+        max-height: 851px;
         margin: 1rem auto;
-        border-radius: 1rem;
+    }
+}
+
+
+/* Galaxy Fold */
+@media screen and (max-width: 280px) and (max-height: 653px) {
+    .content {
+        max-width: 280px;
+        max-height: 653px;
+        margin: 1rem auto;
+    }
+}
+
+/* Galaxy A51/A71 */
+@media screen and (max-width: 412px) and (max-height: 914px) {
+    .content {
+        max-width: 412px;
+        max-height: 914px;
+        margin: 1rem auto;
+    }
+}
+
+/* Layout para computadores e notebooks */
+@media screen and (min-width: 420px) and (min-height: 660px) {
+    .content {
+        max-width: 420px;
+        max-height: 660px;
+        margin: 1rem auto;
+    }
+}
+
+/* iPhone XR */
+@media screen and (max-width: 414px) and (max-height: 896px) {
+    .content {
+        max-width: 414px;
+        max-height: 896px;
+        margin: 1rem auto;
+    }
+}
+
+/* iPhone SE */
+@media screen and (max-width: 375px) and (max-height: 667px) {
+    .content {
+        max-width: 375px;
+        max-height: 667px;
+        margin: 1rem auto;
+    }
+}
+
+/* Galaxy S8+ */
+@media screen and (max-width: 360px) and (max-height: 740px) {
+    .content {
+        max-width: 360px;
+        max-height: 740px;
+        margin: 1rem auto;
+    }
+}
+
+/* Galaxy S20 */
+@media screen and (max-width: 412px) and (max-height: 915px) {
+    .content {
+        max-width: 412px;
+        max-height: 915px;
+        margin: 1rem auto;
     }
 }
